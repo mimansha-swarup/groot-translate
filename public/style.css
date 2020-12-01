@@ -1,50 +1,86 @@
 :root {
-    --chocoloate-color: #9e5b40;
-    --l-color: #6d1008;
-    --bg-color: #252321;
-    --text-color: #f1e1b0;
+    --light-color: #BBA79C;
+    --dark-color: #54433A;
+    --bg-color: #9F8170;
+    --text-color: white;
+    --inner-text-color: #112222;
 }
 
 body {
     margin: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
+    background-image: url(../img/groot-removebg.png);
+    background-repeat: space;
+    background-size: auto;
+    /* background-position: right top; */
 }
 
 nav {
     padding: 2rem;
-    background-color: var(--l-color);
+    background-color: var(--dark-color);
     text-align: center;
     font-size: 2rem;
     margin-bottom: 5rem;
+    border-bottom-left-radius: 3rem;
 }
 
 .container {
-    width: 600px;
-    padding: 0rem 1rem;
+    max-width: 600px;
+    padding: 0rem 2rem;
     margin: auto;
 }
 
 textarea {
-    width: 70%;
+    font-size: 2rem;
+    display: block;
+    margin: 1.5rem;
+    padding: 1rem;
     min-height: 15vh;
-    padding: 2rem;
-    background-color: var(--bg-color);
-    border: 3.5px solid var(--chocoloate-color);
+    width: 70%;
+    color: var(--inner-text-color);
+    background-color: var(--light-color);
+    border: 3.5px solid var(--dark-color);
+    border-radius: 1rem;
 }
 
 button {
-    margin: 2rem 0;
+    margin-left: 1.5rem;
+    padding: 1rem;
     font-size: 1rem;
-    background-color: var(--l-color);
+    background-color: var(--light-color);
     border-radius: 2rem;
-    border: none;
-    padding: .7rem 2rem;
+    border: 3px solid var(--dark-color);
+    color: var(--dark-color);
+    width: 25vh;
 }
 
 #outputField {
-    padding: 2rem;
+    font-size: 1.5rem;
+    display: block;
+    margin: 1.5rem;
+    padding: 1rem;
+    min-height: 10vh;
     width: 70%;
-    min-height: 15vh;
-    border: 3.5px solid var(--chocoloate-color);
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    border: 3.5px solid var(--dark-color);
+    background-color: var(--light-color);
+    color: var(--inner-text-color);
+}
+
+footer {
+    /* margin-top: 3rem; */
+    background-color: var(--dark-color);
+    padding: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    border-top-right-radius: 3rem;
+}
+
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #41fdfe;
 }
