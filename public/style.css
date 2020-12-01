@@ -1,0 +1,50 @@
+:root {
+    --chocoloate-color: #9e5b40;
+    --l-color: #6d1008;
+    --bg-color: #252321;
+    --text-color: #f1e1b0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+nav {
+    padding: 2rem;
+    background-color: var(--l-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.container {
+    width: 600px;
+    padding: 0rem 1rem;
+    margin: auto;
+}
+
+textarea {
+    width: 70%;
+    min-height: 15vh;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border: 3.5px solid var(--chocoloate-color);
+}
+
+button {
+    margin: 2rem 0;
+    font-size: 1rem;
+    background-color: var(--l-color);
+    border-radius: 2rem;
+    border: none;
+    padding: .7rem 2rem;
+}
+
+#outputField {
+    padding: 2rem;
+    width: 70%;
+    min-height: 15vh;
+    border: 3.5px solid var(--chocoloate-color);
+}
