@@ -2,7 +2,7 @@
 
 
 ### Description
-This is a simple webapp use to convert english to minion lang
+This is a simple webapp use to convert english to groot lang
 ### Tech Stack
 - HTML
 - CSS
