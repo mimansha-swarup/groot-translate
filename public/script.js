@@ -4,21 +4,18 @@ const output = document.querySelector("#outputField");
 
 var serverURL = "https://api.funtranslations.com/translate/groot.json"
 
-function finalURL(streng) {
-    return serverURL + "?" + "text=" + streng;
+const finalURL = streng => serverURL + "?" + "text=" + streng;
 
-}
 
-function errorHandler(error) {
+
+const errorHandler = error => {
     console.log("error occured", error);
     alert("something wrong with server! try again after some time")
 }
 
 
-function showTranslated() {
+const showTranslated = () => {
     var inptText = input.value
-
-
 
     fetch(finalURL(inptText))
         .then(response => response.json())
